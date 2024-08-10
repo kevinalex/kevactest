@@ -1,0 +1,5141 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Warcraft-5e-spells",
+				"abbreviation": "WC5e",
+				"full": "Warcraft 5e Spells Chapter 6",
+				"version": "3"
+			}
+		]
+	},
+	"spell": [
+		{
+			"name": "Alextraszas Fury",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Your hands burst into flames as you push a roaring wave of fire outward from yourself. Each creature in a 60-foot cone must make a Constitution saving throw. On a failed save, a target takes {@damage 12d6} fire damage and is {@condition stunned} until the end of their next turn. On a successful save, a target takes half as much damage and isn't {@condition stunned}. The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried. A creature killed by this spell is reduced to ash."
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Amplify or Dampen Magic",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "something of value to the creature"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manipulate the flow of mana rushing through a creature, if the creature is unwilling you must succeed on a melee spell attack before you can manipulate their flow. When you touch a creature with this spell, you choose which effect you want to affect the creature with for the spells duration.",
+				{
+					"type": "entries",
+					"name": "  Amplify",
+					"entries": [
+						"You amplify a creatures magical prowess. The creature takes additional damage when hit by a spell, deals additional damage when casting a spell, and restores additional hit points to a creature with a spell by an amount equal to your spellcasting modifier."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "  Dampen",
+					"entries": [
+						"You dampen a creatures magical prowess. The creature reduces damage taken by spells, damage dealt by spells, and the number of hit points restored to it by a spell by an amount equal to your spellcasting modifier."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Angelic Feather",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a feather"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You touch one creature within reach, granting it the swiftness of an angelic being. For the duration of the spell, the creature can take the {@action Dash} and {@action Disengage} action as a bonus action on its turn, and  gains resistance to falling damage."
+			],
+			"miscTags": [
+				"UBA"
+			]
+		},
+		{
+			"name": "Apotheosis",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You enter a pure Holy form, shining bright light in a 40-foot radius and dim light for an additional 40 feet for the spell's duration. Until the spell ends, you gain the following benefits:",
+				"You are immune to radiant damage and have resistance to necrotic damage.",
+				"Aberrations, elementals, fey, fiends, and undead have disadvantage on attack rolls against you.",
+				"You gain a flying speed of 60 feet as spectral wings appear on your back.",
+				"Any creature that moves within 10 feet of you for the first time on a turn or ends its turn there takes {@damage 2d10} radiant damage, and must succeed on a Constitution saving throw or be {@condition blinded} until the end of your next turn.",
+				"You can use your action to create a line of holy radiance 30 feet long and 10 feet wide extending from you in a direction you choose. Each creature in the line must make a Constitution saving throw. A creature takes {@damage 8d8} radiant damage and is {@condition blinded} until the end of your next turn on a failed save, or half as much damage and suffering no additional effects on a successful one.",
+				"You can use an action to touch a creature with healing light. The creature regains {@dice 8d8} hit points."
+			],
+			"damageResist": [
+				"necrotic"
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"LGT"
+			]
+		},
+		{
+			"name": "Arcane Barrage",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You manifest three bolts of raw force and launch them at a target within range. Make a ranged spell attack for each bolt. On a hit, a target takes {@damage 5d4} force damage and is pushed 10 feet directly away from you.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a <br> spell slot of 5th level or higher, the spell creates one more bolt for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"FMV"
+			]
+		},
+		{
+			"name": "Arcane Blast",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You extend your hand and make a burst of arcane energy erupt from a target within range. If the target is a creature it must succeed on a Dexterity saving throw or take {@damage 1d8} force damage. A creature forced to make a Constitution saving throw to maintain {@status concentration} because of this spell, makes the saving throw with disadvantage.",
+				"This spells damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), 17th level ({@dice 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "force damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Arcane Explosion",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "sphere",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You draw from the fluctuating arcane near you and burst with a wave of arcane power. Each other creature within range must make a Dexterity saving throw. On a failed save, a target takes {@damage 6d8} force damage and can't take reactions until the start of its next turn. On a successful save, a target takes half as much damage and can use its reactions as normal.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Archangel",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an object engraved with a a symbol of the Light or Void, worth at least 500 gp",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You mutter a prayer invoking the powers of the Light or Shadow to aid your cause. You gain the following benefits until the spell ends:",
+				"You are immune to fire and radiant damage (Light) or psychic and necrotic damage (Shadow)",
+				"You are immuned to the {@condition charmed} condition (Light) or the {@condition frightened} condition (Shadow)",
+				"You grow spectral wings, gaining a fly speed of 40 feet.",
+				"You can add your spellcasting modifier to spells that restore hit points (Light) or spells that deal damage (Shadow). The priest also regains hit points equal to half the healing or damage done on one target of the spell's casting.",
+				"* You can cast cantrips with a casting time of 1 action as a bonus action instead."
+			],
+			"conditionInflict": [
+				"charmed",
+				"frightened"
+			],
+			"miscTags": [
+				"HL",
+				"UBA"
+			]
+		},
+		{
+			"name": "Army of the Dead",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "brain matter from a humanoid killed within the past 24 hours"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You voice profane words, and summon an army of the dead to kill and consume everything in its path. A horde of sham&shy;bling corpses appears around you, and disappears when it drops to 0 hit points or  when the spell ends.",
+				"Roll initiative for the horde, which has its own turns. You cannot control the horde. It spends its turns pursing and attacking the nearest nonundead to the best of its ability. <br> It will use its Slams action to attack and grapple creatures before moving to occupy its victims' spaces and engulf them on the next turn with its Flesh-Eating Compulsion feature. If no creatures are within its reach, the horde will use its full movement to approach any nonundead crea&shy;tures it can see or hear. If no such creatures are evident, it will mindlessly follow you until targets present themselves.",
+				"When you first cast this spell, you can designate any number of creatures that you can see to be ignored by the shambling horde, and which will be unaffected by its Flesh-Eating Compulsion feature. If you stop {@status concentration||concentrating} on the spell before it reaches its full duration, the horde remains for {@dice 1d6} rounds if it still has hit points, and no longer ignores these creatures."
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Asphyxiate",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Shadowy tendrils extend from you and swirl around the throat of a creature you can see within range. The target must make a successful Constitution saving throw or be {@condition restrained} and {@condition incapacitated} for the spells duration. While {@condition restrained} in this way, the target is unable to speak. At the end of each of its turns, the target can make another Constitution saving throw. On a success, the spell ends on the  target."
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Beacon of Light",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your hand a place a holy mark on a creature within range. Whenever you restore hit points to a target with a spell slot, the marked creature regains a number of hit points equal to your spellcasting modifier. The spell ends if the creature is ever outside the spell's range."
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Blinding Light",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause dazzling light to burst forth around you. Each creature within a 30-foot-radius of you must succeed on a Constitution saving throw, or be {@condition blinded} for 1 minute or until it takes damage.",
+				"A creature {@condition blinded} by this spell can make another Constitution saving throw at the end of each of its turns. On a successful save, it is no longer {@condition blinded}."
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Blizzard",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "shards of glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A cold light flashes from your hand into the sky as blue shards hurl down in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, shards of freezing ice rain down upon the area.",
+				"When a creature enters the spell's area for the first time on a turn or starts its turn there, it must make a Dexterity saving throw. A target takes {@damage 3d6} cold damage on a failed save, or half as much damage on a successful one.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Blood Boil",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You reach out with unholy power, causing the blood in the veins of nearby creatures to boil. Each creature you choose within 15 feet of you must succeed on a Constitution saving throw or take {@damage 2d4} fire damage plus {@damage 2d4} necrotic damage. <br> A creature that succeeds on its saving throw takes half as much damage. Creatures that have no blood or vital fluids are immune to the effects of this spell.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the fire and necrotic damage each increase by {@dice 1d4} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire",
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Bloodlust and Heroism",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You imbue creatures (30-feet radius) of your choice within range with the will and determination to fight harder. Each target gains the following benefits for the duration of the spell.",
+				"The target is immune to being {@condition frightened} and any {@condition frightened} condition on the target is surpressed for the spell's duration.",
+				"Whenever the target makes an attack roll or a saving throw before the spell ends, the target can roll a {@dice d4} and add the number rolled to the attack roll or saving throw.",
+				"The target gains temporary hit points equal to your spellcasting ability modifier at the start of each of its turns. When the spell ends, the target loses any remaining temporary hit points from this spell."
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Cataclysm",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 8,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 150
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of charcoal"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You cause the ground to crack and split, with molten magma and fire spitting up out in a 60-foot radius centered on a point within range. Each creature in the area must make a Dexterity saving throw or  take {@damage 10d6} fire damage, taking half damage on a success.",
+				"A creature who takes fire damage from the initial damage of this spell is set aflame, taking an additional {@damage 2d6} fire damage at the beginning of each of their turns. They or another adjacent creature can use their action to put out the flames, taking {@damage 1d6} fire damage in the process.",
+				"The ground in the area of this spell remains damaged, turning into difficult terrain. It remains hot for 1 minute, and any creature who enters the area for the first time on their turn or starts their turn there takes {@damage 1d6} fire damage."
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Chain Heal",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A beam of restorative energies surges through a friendly creatures. (15-feet between targets) Choose a target you can see within range, then choose a target you can see within range of it, and another within range of the second target. You can't choose the same target more than once. Each target chosen by this spell regains a number of hit points equal to {@dice 2d4} + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the chain heal surges through one additional target for each slot level above 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Chains of Ice",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Frost ridden chains erupt from the ground beneath a target that you can see within range. The target must succeed on a Strength saving throw, or have their movement speed halved for the spell's duration.",
+				"The chained target must make a Strength saving throw at the end of each of its turns. On a successful save, the chains break and the spell ends on the target.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, you can target one additional creature for each slot level above 2nd."
+					]
+				}
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Conjure Undead",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "viscera from a creature killed <br> within the past 24 hours"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a powerful undead being from the crypts and slaughterhouses of Northrend. You choose the undead's type, which must be one of challenge rating 5 or lower, such as a revenant or wraith. The undead appears in an unoccupied space you can see within range, and the undead disappears when it drops to 0 hit points or when the spell ends.",
+				"Roll initiative for the undead, which has its own turns. When you summon it and on each of your turns thereafter, you can issue a verbal command to it (requiring no action on your part), telling it what it must do on its next turn. If you issue no command, it spends its turn attacking any creature within reach that has attacked it.",
+				"If you stop {@status concentration||concentrating} on the spell before it reaches its full duration, the undead spends the rest of the spell's duration pursuing and attacking the nearest non-undead to the best of its ability.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the challenge rating increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Corpse Explosion",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"s": true,
+				"m": "a corpse, which the spell destroys"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"The corpse of a recently deceased creature rapidly bloats at your command and erupts in a gruesome explosion. You target the corpse of a creature that's been dead for no longer than 1 minute that you can see within range. Each creature within 5 feet of that corpse must make a Dexterity saving throw. A target takes {@damage 2d6} necrotic damage on a failed save, or half as much damage on a successful one. The radius of the explosion increases by 5 feet for every size category of the corpse above Medium.",
+				"A corpse detonated in this way is destroyed and cannot be raised or resurrected by any ability that requires a com&shy;plete corpse. Not all creatures leave a corpse; construts and oozes almost never do, neither do incorporeal undead.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 2d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Create Healthstone",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You create a fist-sized glowing green stone in your hand. A creature can use its action to crush the stone, destroying it and regaining hit points equal to {@dice 1d10} + your spellcasting modifier. The stone loses its abilities if not used within 24 hours.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the healing increases by {@dice 1d10} for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Create Soulstone",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a crystal orb worth 50 gp",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 10
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You bind the souls of creatures to the world of the living, allowing them to come back from the brink of death. When you cast this spell, select up to six willing creatures within range (30 feet). If any of the targets would be reduced to 0 hit points during the spell's duration, they are reduced to 1 hit point instead and the material component is consumed. When the spell ends, each creature that been targeted by the spell is alerted that the spell has ended and which creature had been saved. The spell cannot alert or save creatures on another plane of existence than the material component.",
+				"If you cast this spell again, the effect of any previously cast create soulstone spell ends. The spell ends prematurely if its material component is ever not on your person. A creature can only benefit from one soulstone at a time."
+			]
+		},
+		{
+			"name": "Create Soulwell",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You cause a runed stone altar to appear in an unoccupied space within range. An allied creature can use its action to reach into the liquid that fills the basin to withdraw a glowing green stone. When the spell ends, the altar disappears, but the stones remain until used or 24 hours pass, whichever is first. A creature can crush the stone as an action to regain hit points equal to {@dice 4d10} + your spellcasting modifier.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the healing increases by {@dice 1d10} for each slot level above 6th."
+					]
+				}
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Cyclone",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A whirl of wind forms around a Large or smaller creature that you can see within range. The target must make a Strength saving throw. On a failed save, the target is lifted off the ground and is {@condition restrained} for the spell's duration.",
+				"As an action, you can cause the cyclone to move up to 20 feet in a direction of your choice. A creature {@condition restrained} by the cyclone moves with it. If the cyclone moves through a space too narrow for its {@condition restrained} creature, the creature breaks out and the spell ends.",
+				"To break out, the {@condition restrained} target can use its action to make a Strength check against your spell save DC. On a success, the target escapes and is no longer {@condition restrained} by the hand. The cyclone then vanishes."
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Dark Void",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a holy symbol"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You pull on the veil separating reality and the void realm, creating small fissures where its maddening energies leak through. A creature within range and creatures of your choice within 5 feet of it, must succeed on a Wisdom saving throw or take {@damage 2d4} psychic damage on a failed save, or half as much damage on a successful one. A creature who fails this saving throw also can't regain hit points for 1 round.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Death and Decay",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You reach out towards a point you can see within range, creating a 20-foot radius sphere filled with festering, necro&shy;tic energy that withers and decays everything within it. When a creature enters the blighted area for the first time on a turn or starts its turn there, it must make a Constitu&shy;tion saving throw. On a failed save, the creature takes {@damage 4d8} necrotic damage. In addition, until the beginning of its next turn, the creature subtracts {@dice 1d4} from all of its attack rolls and saving throws, as if under the effect of the bane spell. On a successful save, the creature takes half as much damage, and suffers no additional effects.",
+				"Undead creatures in the spell's area take no damage, and are bolstered by its necrotic power. While standing in the spell's area, undead creatures add {@dice 1d4} to their attack rolls and saving throws, as if under the effect of a bless spell.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d8} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Death Chain",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Ghastly chains erupt from you towards up to three different creatures you can see within range. Make a ranged spell attack against each target. On a hit, a target takes {@damage 4d8} necrotic damage and becomes chained together with you and any other target hit for the spell's duration.",
+				"Chained creatures must succeed on a Strength saving throw to move more than 20 feet away from you. On a successful save, the target breaks the chain, ending the spell's effect on them. Whenever you or another chained creature takes damage from a weapon attack or spell, each other creature chained together (including you) takes psychic damage equal to half the damage taken.",
+				"Damage you take through this spell does not prompt a Constitution saving throw to maintain {@status concentration} on it."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"savingThrow": [
+				"constitution",
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Death Grip",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Necrotic energy grasps around a Huge or smaller creature you can see that is currently at least 10 feet away from you, and within the spell's range. The creature must make a successful Strength saving throw or be moved to an empty space within 5 feet of you, and your next attack roll against them this turn is made with advantage."
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Deathwyrm's Fury",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a scale from a slain dragon"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You summon a mighty undead dragon to breath destruction on your enemies. You choose where to summon an ember&shy;wyrm, frostwyrm, or vilewyrm. It appears hovering above you and unleashes its breath weapon, tainted by necrotic power, before vanishing.",
+				"The spell fails if there is insufficient room for the dragon to appear (for example, you are in a narrow tunnel). Any living dragons that witness you cast this spell will almost surely view you as a sworn enemy, if they didn't already.",
+				{
+					"type": "entries",
+					"name": "  Emberwyrm",
+					"entries": [
+						"The dragon exhales fire in a 60-foot cone. Each creature in that area must make a Dexterity saving throw, taking {@damage 5d8} fire damage and {@damage 5d8} necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "  Frostwyrm",
+					"entries": [
+						"The dragon exhales an icy blast at a point within 120 feet. Each creature within 20 feet of that point must make a Dexterity saving throw, taking {@damage 5d8} cold damage and {@damage 5d8} necrotic damage on a  failed save, or half as much damage on a successful one.",
+						"Vilewyrm The dragon exhales acid in a 120-foot line <br>that is 10 feet wide. Each creature in that line must make a Dexterity saving throw, taking {@damage 5d8} acid damage and {@damage 5d8} necrotic damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"necrotic"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"SMN"
+			]
+		},
+		{
+			"name": "Decompose",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You reach out and touch the corpse of a creature. Over the next minute, the corpse begins to rapidly decompose, sprouting fungus and moss as it begins to degrade into compost and mulch. An odd-colored flower or two may also spring from the corpse in this time. Applicable requirements for resurrection are unaffected by this decomposition."
+			]
+		},
+		{
+			"name": "Demon Skin",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "dried skin of a demon or fiend"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"Your skin becomes covered in a layer of fel energy, infusing you with fiendish vigor. Your base Armor Class becomes 8 + your spellcasting ability modifier (minimum AC 10).",
+				"Additionally, your current hit points and hit point maximum each increase by 2. If ending the spell would cause your current hit point total to drop to 0 or lower, it drops to 1 instead.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the Armor Class granted by the spell increases by 1 and your current hit point total and hit point maximum each increase by 2 for each slot level above 1st."
+					]
+				}
+			]
+		},
+		{
+			"name": "Devouring Plague",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a drop of bone marrow"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose a creature that you can see within range. The target must succeed on a Constitution saving throw or be affected by a horrible disease for the spell's duration. Until the spell ends, whenever the  affected creature is hit by you, or fails a saving throw against your spell, it takes {@damage 2d8} necrotic damage.",
+				"Additionally, if the affected creature is reduced to 0 hit points, you can spend and roll two of your unspent Hit Dice and regain a number of hit points equal to the roll plus your spellcasting ability modifier.",
+				"Since this spell induces a natural disease in its target, any effect that removes a disease or otherwise ameliorates a disease's effects apply to it.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When cast with a spell slot of 3rd level or higher, the necrotic damage increases by {@dice 1d8}, and The number of Hit Dice that can be spent and added to the healing roll increases by one for each slot above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Diabolism",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"This spell channels a small amount of dark energy. You create one of the following magical effects within range:",
+				"Choose a point within 30 feet. In a 5-foot radius of that point, bright light becomes dim light, and dim light becomes darkness for 1 hour. Any light sources within the area have the light they produce suppressed for the duration.",
+				"An object up to 1 cubic foot in size or an area up to 1 square foot that you touch lightly decays. Wood rots, glass cracks, flowers wilt. Casting the spell and then continuing to touch the target advances the decay; after 1 minute, the target is destroyed. This spell cannot affect creatures, magical objects, or sturdy materials like metal and stone.",
+				"You can reanimate a Tiny 0 CR beast for 1 hour. It is undead and obeys all of your commands to the best of it's abilities, though it cannot attack. You cannot use this effect again until the reanimated creature dies, or the effect ends.",
+				"You instantaneously light a candle, torch, or small campfire. The fire glows your choice of a smoldering red, bright green, or shadowy purple until extinguished.",
+				"Your fingertip glows green or purple for up to 1 minute. While it glows, you can use your finger to draw glowing lines of the same color on a solid surface that last for 1 hour.",
+				"If you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action."
+			],
+			"miscTags": [
+				"LGT",
+				"OBJ"
+			]
+		},
+		{
+			"name": "Divine Star",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A star of divine energy streaks forward in a 30 feet long and 5 feet wide line from you in a direction you choose. Each friendly creature in the stars path regains {@dice 2d8} hit points, and each hostile creature must make a Dexterity saving throw, taking {@damage 3d8} radiant damage on a failed save, or half as much damage on a successful one.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the spells healing and damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Divine Shield",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a small silver mirror"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A ward of divine energy surrounds your body, warding you against attacks. For the duration, you are considered to be immune to damage dealt by weapon attacks, spells, and spell-like effects. The spell does not protect you against natural sources of damage, such as molten lava or falling.",
+				"If you make an attack or cast a spell that affects an enemy creature, this spell ends."
+			]
+		},
+		{
+			"name": "Dominate Undead",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You attempt to beguile an undead that you can see within range. It must succeed on a Wisdom saving throw or be {@condition charmed} by you for the duration. If you or creatures that are friendly to you are fighting it, it has advantage on the saving throw.",
+				"While the undead is {@condition charmed}, you have a telepathic link with it as long as the two of you are on the same plane of existence. You can use this telepathic link to issue com&shy;mands to the creature while you are conscious (no action required), which it does its best to obey. You can specify a simple and general course of action, such as \"{@action Attack} that creature,\" \"Run over there,\" or \"Fetch that object.\" If the creature completes the order and doesn't receive further direction from you, it defends and preserves itself to the best of its ability.",
+				"You can use your action to take total and precise control of the target. Until the end of your next turn, the creature takes only the actions you choose, and doesn't do anything that you don't allow it to do. During this time, you can also cause the creature to use a reaction, but this requires you to use your own reaction as well.",
+				"Each time the target takes damage, it makes a new Wisdom saving throw against the spell. If the saving throw succeeds, the spell ends.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell with a <br> 5th-level spell slot, the duration is {@status concentration}, up to 10 minutes. When you use a 6th-level spell slot, the duration is {@status concentration}, up to 1 hour. When you use a 7th level or higher, the duration is {@status concentration}, up to 8 hours."
+					]
+				}
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Drain Life",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You cause a green stream of energy to trail from the target creature's eyes and mouth and into your hand, forming a continuous stream of energy to bind you two together.",
+				"Make a ranged spell attack against that creature. On a hit, the target takes {@damage 1d8} necrotic damage, and on each of your subsequent turns for the duration, you can use your bonus action to deal {@damage 1d8} necrotic damage to the target automatically. Each time the target takes damage from this spell, you regain a number of hit points equal to half the damage dealt and their maximum hit point total is reduced by the same amount. This reduction lasts until they finish a long rest.",
+				"On a miss, you can spend your action on subsequent turns within the spell's duration to make another ranged spell attack against the same creature. The spell ends if you use your action to do anything else.",
+				"The spell ends if your target is more than 30 feet away from you or has total cover from you at the end of your turn. This spell has no effect on the creature if they are a construct or undead.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the initial damage increases by {@dice 1d8} for each slot level above 1st. The damage dealt as a bonus action also increases by {@dice 1d8} for every two slot levels above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"HL",
+				"UBA"
+			]
+		},
+		{
+			"name": "Dread Favor",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You are empowered by the suffering of your victims. Until the spell ends, your weapon attacks deal an extra {@damage 1d4} necrotic damage on a hit."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
+			"name": "Earthen Spike",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a granite pebble"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You place your hand on the ground and evoke the element of earth, erupting a spike of earth at a point within range. A 5-foot radius, 15-foot high spike of earth erupts from that point. Each creature within that area must make a Dexterity saving throw. On a failed save, a creature takes {@damage 6d8} bludgeoning damage, or half as much damage on a success. Each creature affected by this spike is pushed away from the point of the spell to the nearest empty space. A creature who failed the saving throw falls {@condition prone}.",
+				"The earthen spike remains for the duration of the spell or until your {@status concentration} is broken at which point it crumbles, leaving its area as difficult terrain. When it crumbles, each creature within 5 feet of it must succeed on a Dexterity saving throw or take {@damage 1d6} bludgeoning damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d8} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Eclipse",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of water from a moonwell"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You evoke the goddess Elune to block out the rays of An'she within 5 miles of you for the duration. You must be in an outdoor area to cast this spell.",
+				"When you cast this spell, an eclipse gradually blocks out any natural light over 1 minute, bathing any outdoor area in complete darkness. The eclipse also affects any light source with a clear path to the sky, changing bright light to dim light and dim light to darkness. When the spell ends, the eclipse gradually vanishes over the cause of 1 minute as natural light returns."
+			]
+		},
+		{
+			"name": "Elemental Shock",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of brimstone, granite, glass, and a feather"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You manifest a burst of elemental force around a creature within range. You choose acid, cold, fire, lightning, or thunder for the shock you make, the creature must then make a Dexterity saving throw. Taking {@dice 3d8} of the chosen damage type on a failed save, or half as much on a success.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Exorcism",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a flask of holy water, which this spell consumes",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You call upon holy forces to harm unholy creatures. Make a ranged spell attack against a creature in range, and on a hit, they take {@damage 3d8} radiant damage. Additionally, if that creature is an aberration, fiend, or undead, they take {@dice 2d8} additional radiant damage.",
+				"If the target is possessed or {@condition charmed} by an aberration, fiend, or undead, only the possessing or charming creature takes the damage if they are in range of the spell, and the target can reroll against possession or {@condition charmed} effect with advantage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you deal an additional {@damage 1d8} radiant damage, for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Fade",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "upon taking a hit from an attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You fade from people's views, becoming {@condition invisible} until the end of your next turn. This invisibility ends early if you attack, cast a spell, or force a creature to make a saving throw."
+			],
+			"conditionInflict": [
+				"invisible"
+			]
+		},
+		{
+			"name": "Fel Flame",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A green flame skitters across the ground towards a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} fire damage. Fel flame ignores fire resistance, and creatures immune to fire damage are considered to be resistant.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "fire damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Fire and Brimstone",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a humanoid skull blackened by fire"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"An eruption of fiery doom blasts out from a point you choose within range, sending six streaks of flames slithering towards targets within 30 feet of it. You can direct the snaking fires to hit one target or several. A target takes {@damage 1d10} fire damage for each flame that strikes it, and can attempt a Dexterity saving throw to take half as much damage. Each target only makes one saving throw, regardless of  how many flames it is struck by.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the spell creates one more streak of flame for each spell level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Flurry",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Three shards of ice streaks out toward one or more creatures within range. Make a ranged spell attack for each shard. You can direct the shards at the same target or at different ones, but they all strike simultaneously. Each shard deals {@damage 1d4} cold damage on a hit.",
+				"This spell's damage increases by {@dice 1d4} per shard when you reach 5th level ({@dice 2d4}), 11th level ({@dice 3d4}), and 17th level ({@dice 4d4})."
+			],
+			"scalingLevelDice": {
+				"label": "cold damage",
+				"scaling": {
+					"1": "1d4",
+					"5": "2d4",
+					"11": "3d4",
+					"17": "4d4"
+				}
+			},
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Freezing Touch",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a shard of glass or ice"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Your fingers become cold to the touch as frost manifests on their surface. Make a melee spell attack against a creature within range. On a hit, the creature is {@condition incapacitated} and {@condition restrained} until the spell ends as ice encap&shy;sulates their body. The spell ends for an affected creature if it takes any damage or if someone else uses an action to break the creature out of the ice."
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"restrained"
+			],
+			"spellAttack": [
+				"M"
+			]
+		},
+		{
+			"name": "Frostfire Bolt",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of glass and sulfur"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You hurl a bolt of blue flames at a creature within range. Make a ranged spell attack against the creature. On a hit, the target takes {@damage 2d6} fire damage and {@damage 2d6} cold damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the fire and cold damage increases by {@dice 1d6} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold",
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Glacial Spike",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You form a large spike of ice above your head, and launch it at a creature that you can see within range, causing it to shatter across their body. The target must make a Dexterity saving throw. It takes {@damage 8d8 + 40} cold damage on a failed save, or half as much damage on a successful one.",
+				"If this damage reduces a creature to 0 hit points, it is reduced to shards of ice, leaving behind everything it was wearing and carrying. The creature can be restored to life only by means of a true resurrection or a wish spell."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"HL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Guardian of the King",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when a creature is hit by an attack or spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A barrier of holy light shields the triggering creature. Until the start of your next turn, the creature gains resistance to all damage dealt by weapon attacks, spells, and spell-like effects, including against the triggering attack. The spell does not protect you against natural sources of damage, such as molten lava or falling."
+			],
+			"damageResist": [
+				"acid",
+				"bludgeoning",
+				"cold",
+				"fire",
+				"force",
+				"lightning",
+				"necrotic",
+				"piercing",
+				"poison",
+				"psychic",
+				"radiant",
+				"slashing",
+				"thunder"
+			]
+		},
+		{
+			"name": "Halo",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You spread your hands, creating a burst of divine energy that ripples outward from you. You choose to create either Light or Shadow halo.",
+				{
+					"type": "entries",
+					"name": "  Light",
+					"entries": [
+						"Each creature within 60 feet of you are washed over by wave of holy energy. Hostile creatures must succeed on a Constitution saving throw or take {@damage 6d6} radiant damage, and allied creatures regain {@dice 6d6} hit points. A creature that succeeds on its saving throw takes half as much damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "  Shadow",
+					"entries": [
+						"Each creature you choose within 60 feet of you are struck by wave of shadow energy. They must succeed on a Constitution saving throw or take {@damage 6d6} necrotic damage, as well as {@damage 6d6} psychic damage. A creature that succeeds on its saving throw takes half as much damage.",
+						"If there is 50 feet or more between you and a creature when you cast this spell, that creature makes the saving throw with disadvantage."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic",
+				"psychic",
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Healing Rain",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a vial of rain water"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You summon a cloud at a point within range, blanketing a 15-foot radius area around it in rain. Each friendly creature enters the rain for the first time on their turn, or starts their turn within the rain regains {@dice 2d6} hit points. The healing rain extinguishes nonmagical fires within its area of effect.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the healing increases by {@dice 1d6} for every two slot levels above 5th."
+					]
+				}
+			],
+			"miscTags": [
+				"HL",
+				"SMN"
+			]
+		},
+		{
+			"name": "Holy Nova",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a burst of holy energy in a 15-foot radius circle around you. All friendly creature regain {@dice 3d6} hit points, while all hostile creatures must make a Constitution saving throw, taking {@damage 4d6} radiant damage on a failed save or half as much on a success. Aberrations, fiends, undead make this saving throw with disadvantage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Level",
+					"entries": [
+						"When you cast this spell with a spell slot of 4th level or higher, The healing and damage done increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Holy Prism",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A streak of light surges from you to one creature within range and scatters on impact, touching three additional creatures of your choice within 5 feet of the target. Each creature gains one of the following effects of your choice.",
+				{
+					"type": "entries",
+					"name": "  Harm",
+					"entries": [
+						"The creature must succeed on a Dexterity saving throw, taking {@damage 2d4} radiant damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "  Heal",
+					"entries": [
+						"The creature regains a number of hit points equal to {@dice 1d4} + your spellcasting ability."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you may increase the damage and healing by {@dice 1d4} for each slot level above 2nd, or choose one additional creature within 5 feet of the target for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Holy Wrath",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a burst of radiant energy in a blast. Each creature of your choice within a 20-foot-radius of you must make a Wisdom saving throw. A target takes {@damage 6d6} radiant damage on a failed save, or half as much damage on a successful one. The blast spreads around corners.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Howling Blast",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"An icy gale suddenly erupts around a point of your choice within range. Each creature in a 15-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes {@damage 3d8} cold damage on a failed save, or half as much damage on a successful one. A cold fog hangs in the air afterwards, making the area heavily obscured. It lasts for the duration or until a wind of moderate or greater speed (at least 10 miles per hour) disperses it.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d8} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBS"
+			]
+		},
+		{
+			"name": "Ice Block",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "when you take damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Ice rapidly materializes around you, protecting you from harm. You gain 40 temporary hit points and immunity to cold damage for the spells duration. While the spell is active you can't move and take any actions or reactions. The spell remains until the temporary hit points have been expended or for the spell's duration."
+			],
+			"damageImmune": [
+				"cold"
+			],
+			"miscTags": [
+				"THP"
+			]
+		},
+		{
+			"name": "Ice Nova",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "glass dust and water"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Frigid cold rapidly expands in a 15-foot-radius centered on a point you you can see within range. Each creature in the cold must succeed on a Dexterity saving throw. On a failed save, a creature takes {@damage 10d6} cold damage and is {@condition restrained} for 1 minute as ice encases the lower part of their legs. On a successful save, it takes half as much damage and isn't {@condition restrained} by this spell.",
+				"A creature {@condition restrained} by the ice can use its action to make a Strength check against your spell save DC. On a success, it frees itself. Alternatively, the ice can be broken by dealing a total of 40 hit points worth of damage to it. It has an armor class of 10."
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"abilityCheck": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Icebound Fortitude",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are dealt bludgeoning, piercing, or slashing damage"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You temporarily freeze your own blood and make your skin as hard as ice. Until the start of your next turn, you have resistance to bludgeoning, piercing, and slashing damage, including against the triggering damage."
+			]
+		},
+		{
+			"name": "Icy Touch",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You summon icy energy to strike against a creature you can see within range, freezing them with the chill of the grave. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes {@damage 3d8} cold damage, and it can't regain hit points until the start of your next turn. Until then, the target's skin grows as pale as ice. If you hit a celestial target, it also has disadvantage on attack rolls against you until the end of your next turn.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d8} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"cold"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"HL",
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Inner Fire",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"entries": [
+				"You are protected by your faith and convictions. While unarmored, your base AC becomes 11 + your spellcasting modifier, and you gain advantage on saving throws you make to avoid or end the {@condition frightened} condition on yourself. The spell ends early if you don armor."
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Inner Focus",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch a willing creature and amplify their focus through their convictions. The next ability check the creature makes while affected by this spell is empowered, adding your spellcasting modifier to  it, upon which this spell ends."
+			]
+		},
+		{
+			"name": "Inner Will",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You touch a willing creature and bolster their will through their convictions. The target adds your spellcasting modifier to its own while making Wisdom saving throws. This effect lasts for duration or  until the target passes a Wisdom saving throw it would have otherwise failed."
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Invoke Elements",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1,
+						"upTo": true
+					}
+				}
+			],
+			"entries": [
+				"You invoke a minor portion of the elements. You create one of the following magical effects within range:",
+				"You create a harmless sensory effect that predicts what the weather will be for the next 24 hours. This effect persists for 1 round.",
+				"You light or put out a small flame.",
+				"You cause flames to flicker, brighten, drim, or change color for 1 minute.",
+				"You cause harmless tremors in the ground for 1 minute.",
+				"You cool or heat up a small amount of liquid.",
+				"If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action."
+			]
+		},
+		{
+			"name": "Jaina's Flying Ship",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 9,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"You channel your powers into a nonmagical ship within range, the ship can be no larger than 100 feet long, and 30 feet wide. For the spell's duration, the ship gains a flying speed of 60 feet, the ship changes direction and altitude at your command, continuing its course until a new command is given or the spells duration ends.",
+				"The flying ship has an Armor Class of 15, and 300 hit points; immunity to poison and psychic damage, and immunity to all conditions.",
+				"It has a maximum carrying capacity of 50 tons (limited by the size of the ship itself). It is not slowed by any weight until its maximum capacity is reached, at which point the ship loses its flying property and falls at a rate of 60 feet per round until it hits the ground. It takes no falling damage from the fall, and its passengers are unharmed",
+				"You can make this effect permanent by casting this spell on the same ship once per week for one year."
+			]
+		},
+		{
+			"name": "Lava Burst",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You manifest molten stone and magma into a ferocious ball, and hurl it at a target within range. The target must make a Dexterity saving throw. On a failed save, it takes {@damage 3d6} fire damage and {@damage 3d6} bludgeoning damage, or half as much on a successful one.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} fire and bludgeoning damage for each slot above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Light of the Protector",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You feel the warmth of the light within you as a surge of positive energy washes through you, restoring a number of hit points equal to {@dice 5d12 + 30}. This spell also ends blindness, deafness, and any diseases affecting you."
+			]
+		},
+		{
+			"name": "Lightning Blast",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"An arc of lightning streaks from your palms towards a creature within range. Make a ranged spell attack. On a hit, the target takes {@damage 1d8} lightning damage. If the target is wearing armor made of metal, it instead takes {@damage 1d12} lightning damage.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8} or {@dice 2d12}), 11th level ({@dice 3d8} or {@dice 3d12}), and 17th level ({@dice 4d8} or {@dice 4d12})."
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Lightning Shield",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call upon the element of air and surround a friendly target within range with a field of crackling electricity. Until the spell ends, the target gains a +1 bonus to AC and when a creature hits it with a melee attack, that creature takes {@damage 1d4} lightning damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d4} for each slot level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"lightning"
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Living Bomb",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a flammable liquid"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manipulate the mana flowing through a creature within range, making it burn from the inside with a roaring fire. The target must make a Constitution saving throw, taking {@damage 1d10} fire damage on a failed save. On a successful saving throw, the target takes half as much damage and the spell ends. At the start of each of your turns for as long as the the spell persists, the target must repeat the saving throw, with the same effects for success or failure.",
+				"When the spell ends the target and each creature within 10 feet of it must succeed on a Dexterity saving throw, taking {@damage 2d6} fire damage on a failed save or half as much on a successful one.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage of the explosion increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"savingThrow": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Luminous Barrier",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manifest a dome of brilliant light around you to protect your allies and hinder your foes. Until the spell ends, the dome moves with you, centered on you. Any friendly creature within this dome gain a +2 bonus to AC from spell attacks, spell attack rolls made against them that originate from outside the dome are made with disadvantage, and if the creature would take damage from a weapon attack, they take 3 less points of damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage reduction increases by 1 for each slot level above 4th."
+					]
+				}
+			],
+			"miscTags": [
+				"MAC"
+			]
+		},
+		{
+			"name": "Lunar Strike",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A streak of lunar energy flares through the air. Choose <br> one creature within range, or choose two creatures within range that are within 5 feet of each other. A target must succeed on a Dexterity save or take {@damage 1d6} force damage.",
+				"If cast while outdoors with a clear view of the moon, the spell instead deals {@damage 1d8} force damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"The spell's damage increases by one die when you reach 5th level ({@dice 2d6} or {@dice 2d8}), 11th level ({@dice 3d6} or {@dice 3d8}), and 17th level ({@dice 4d6} or {@dice 4d8})."
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Mantle of the Fallen Crusader",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Unholy power radiates from you in an aura with a 30-foot radius, awakening bloodlust in friendly creatures. Until the spell ends, the aura moves with you, centered on you. While in the aura, each nonhostile creature in the aura (including you) deals an extra {@damage 1d4} necrotic damage when it hits with a weapon attack."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"AAD"
+			]
+		},
+		{
+			"name": "Mass Dispel",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Choose a 15-foot radius sphere within range. Any spell of 3rd level or lower on the target ends. For each spell of 4th level or higher on the target, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, the spell ends.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, you automatically end the effects of a spell on the target if the spell's level is equal to or less than the level of the spell slot you used minus 3."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mind Blast",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You attempt to pierce through the mental defenses of a creature you can see within range. The target must succeed on a Wisdom saving throw or take {@damage 1d8} psychic damage. If this damage would prompt a {@status concentration} check, that check is made with disadvantage.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "psychic damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SCL",
+				"SGT"
+			]
+		},
+		{
+			"name": "Mind Flay",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You wreathe the mind of a creature you can see within range. The target must make a Wisdom saving throw. On a failed save, the creature takes {@damage 2d6} psychic damage or half as much on a successful one.",
+				"In addition to the damage, a creature who failed the saving throw has disadvantage on all attack rolls and ability checks for the spells duration. At the end of each of its turns, the creature can reroll the Wisdom saving throw, ending this effect on a success.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Mind Vision",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your arm and touch a willing creature within reach. For the duration of the spell, you see through the creatures eyes and hear what it hears. During this time, you lose of your own senses and are considered {@condition blinded}, {@condition deafened}, and {@condition stunned}. You can end your mind vision as a free action on your turn."
+			],
+			"conditionInflict": [
+				"blinded",
+				"deafened",
+				"stunned"
+			]
+		},
+		{
+			"name": "Psychic Horror",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "I",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You project a phantasmal current of fear all around you, creating a blast of mental energy. Each creature within a 15-foot radius sphere centered on you must succeed on a Wisdom saving throw or drop whatever they are holding and become {@condition frightened} for the duration. While {@condition frightened}, the creature can only use the {@action Dash} action to move away from you by the safest route available to it unless there is nowhere to move. If the creature ends its turn in a location where it does not have line of sight to you, they can make a Wisdom saving throw. On a successful save, the spell ends for that creature.",
+				"If the creature was already {@condition frightened} and failed the save, they are also {@condition stunned} while they remained {@condition frightened}, or until the take damage."
+			],
+			"conditionInflict": [
+				"frightened",
+				"stunned"
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Pyroblast",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 7,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a piece of brimstone"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You clasp your hands together, conjuring a ball of dripping magma, launching it at a creature or object within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 13d10} fire damage and ignites. Until a creature takes an action to douse the fire, the target takes {@damage 1d10} fire damage at the start of each of its turns.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 8th level or higher, the initial damage increases by {@dice 1d10} for each slot level above 7th."
+					]
+				}
+			],
+			"damageInflict": [
+				"fire"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"OBJ"
+			]
+		},
+		{
+			"name": "Rain of Fire",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a chunk of sulfur and a chunf of iron"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"A rain of small meteorites fall from the sky, exploding on impact. You cause them to fall in a cylinder 30-foot-tall cylinder with a 15-foot radius centered on a point within range. Each creature entering the area for the first time on their turn, or who starts their turn there, must make a Dexterity saving throw, taking {@damage 3d6} bludgeoning damage and {@damage 3d6} fire damage on a failed save, or half as much on a success.",
+				"As a bonus action you can move the cylinder up to 15 feet to a point you can see. Unattended flammable objects in the area are ignited, and metals begin to melt.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@damage 2d6} fire damage per spell level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning",
+				"fire"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Reincarnation",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a bejeweled ankh worth 500 gp",
+					"cost": 50000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "day",
+						"amount": 10
+					}
+				}
+			],
+			"entries": [
+				"You protect your soul with the power of the elements. If you die during the spell's duration, you are instantly returned to life with half your hit points and the material component is consumed.",
+				"This spell neutralizes any poisons and cures normal diseases afflicting you when you died. It doesn't, however, remove magical diseases, curses, and the like; if such effects aren't removed prior to dying, they still afflict you.",
+				"This spell closes all mortal wounds and restores any missing body parts.",
+				"Coming back from the dead is an ordeal. You take a -4 penalty to all attack rolls, saving throws, and ability checks. Every time you finish a long rest, the penalty is reduced by 1 until it disappears.",
+				"If you cast this spell again, the effect of any previously cast reincarnation spell ends. The spell ends prematurely <br> if its material component is ever not on your person."
+			]
+		},
+		{
+			"name": "Repentance",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are targeted by a weapon or spell attack"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"A sense of remorse rushes over the triggering creature. The creature must first make a Wisdom saving throw. On a failed save, the creature must choose a new target or lose the attack or spell."
+			],
+			"savingThrow": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Righteous Smite",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra {@damage 2d6} radiant damage, and the next attack roll mde against this target before the end of your next turn has advantage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the extra damage increases by {@dice 1d6} for each slot level above 2nd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"miscTags": [
+				"AAD",
+				"ADV"
+			]
+		},
+		{
+			"name": "Ritual of Summoning",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "C",
+			"time": [
+				{
+					"number": 10,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "a blood sapphire worth 100 gp",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"You call forth a summoning portal in an empty space within range. Appearing as a shadowy statue of a cloaked figure, holding open the cloak to reveal a gapping swirl into the twisting nether.",
+				"Using 1 minute, you can channel energy into the statue, and call forth the true name of a creature. If the creature is on your plane of existence, a shimmering mirror appears in front of it that only it can see, through the mirror the creature is able to perceive you and your surroundings, but you can not see it.",
+				"A creature can choose to ignore the mirror, in which case it vanishes after 1 minute and a new mirror can't appear in front of that creature again for another 24 hours, or pass through it, in which case it is teleported to the space in front of the summoning stone.",
+				"The ritual of summoning is only able to call creatures to it, a creature can't use the summoning stone to traverse back to their previous location."
+			]
+		},
+		{
+			"name": "Salvation",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 9,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a teardrop of desperation"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You emit holy radiance in a 60-foot radius. Each creature of your choice within range is immune to all damage until the spell ends. Creatures targeted by this spell are also cured of any effect making them {@condition incapacitated}, {@condition stunned}, {@condition paralyzed} or {@condition petrified}."
+			],
+			"conditionInflict": [
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"stunned"
+			]
+		},
+		{
+			"name": "Schism",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You attack a creature's soul with dark energy. Choose a creature within range. The target must make a Charisma saving throw, taking {@damage 8d6} psychic damage on a failed save, or half as much on a successful save. On a failed save, the creature is cursed for the duration. The next time you or an ally of yours hits the cursed creature with an attack, the creature has vulnerability to all of that attack's damage, and then the curse ends."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"charisma"
+			]
+		},
+		{
+			"name": "Shackle Undead",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a short piece of chain"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Choose an undead creature that you can see within range. The target must succeed on a Wisdom saving throw or be {@condition stunned} for the duration or until it takes damage. At the end of each of its turns, the target can make a new Wisdom saving throw. On a success, the spell ends on the target.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, you can target on additional creature for each slot level above 2nd. The creatures must be within 30 feet of each other when you target them."
+					]
+				}
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Shadow Bolt",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You fire a blast of necrotic energy at a creature within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 1d8} necrotic damage.",
+				"When the spell hits, you can choose to take 1 point of psychic damage to increase the damage dealt to {@damage 1d12} necrotic damage.",
+				"The spells damage dealt increases by one die when you reach 5th level ({@dice 2d8} or {@dice 2d12}), 11th level ({@dice 3d8} or {@dice 3d12}), and 17th level ({@dice 4d8} or {@dice 4d12}). The optional damage taken increases by 2 when you reach 5th level (3), 11th level (5), and 17th level (7)."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"SCL"
+			]
+		},
+		{
+			"name": "Shadow Crash",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Shadow energy drips from your palm as you pull it towards the ground and blanket a point that you can see within range in darkness. Each creature in a 20-foot-radius sphere centered on that point must make a Constitution saving throw. A creature takes {@damage 4d8} necrotic damage and {@damage 4d8} psychic damage on a failed save, or half as much damage on a successful one. The darkness spreads around corner and the area of the spell is heavily obscured by magical darkness until the end of your next turn.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 6th level or higher, the damage increases by {@dice 1d8} for each slot level above 5th."
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic",
+				"psychic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"OBS",
+				"SGT"
+			]
+		},
+		{
+			"name": "Shadow Glide",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "radius",
+				"distance": {
+					"type": "feet",
+					"amount": 5
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Obscured by shadows, you teleport to an unoccupied space within 5 feet."
+			],
+			"miscTags": [
+				"TP"
+			]
+		},
+		{
+			"name": "Shadow fury",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your arm and draw shadow energy down upon creatures within a 10-foot radius of a point within range. Each creature takes {@damage 5d8} psychic damage and must succeed on a Wisdom saving throw or be {@condition stunned} for the duration of the spell.",
+				"A {@condition stunned} creature must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Shadowy Apparitions",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You manipulate the shadows around you, sending apparition to haunt your enemy. You create three Medium shadowy apparitions to an unoccupied spaces within 10 feet of you. Choose a target within range for each apparition. Each apparition can have the same or different target. At the end of each of your turns, your shadowy apparitions move 20 feet towards the target, moving through creatures and obstacles, and ignoring any difficult terrain.",
+				"Whenever an apparition is in the same space as another creature, it explodes, forcing that creature to make an Intelligence saving throw, taking {@damage 8d6} psychic damage on a failed save, or half as much on a successful one. A creature who fails this saving throw also has their movement speed reduced to 0 till the start of their next turn.",
+				"After losing {@status concentration} on this spell, all apparitions still present last for 1 round.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels:",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the apparitions do an additional {@damage 1d6} psychic damage for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"intelligence"
+			]
+		},
+		{
+			"name": "Shining Force",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Bright light bursts out from a creature you can see within range, pushing away hostile creatures. Each creature of your choice within a 10-foot-radius of the target must succeed a Dexterity saving throw, or be pushed 10 feet away from the target and be knocked {@condition prone}. For the duration of the spell, you can use your action to burst the shining force from the chosen creature again."
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"FMV",
+				"LGT",
+				"SGT"
+			]
+		},
+		{
+			"name": "Solar Wrath",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You release a blast of the sun's wrath against a creature within range. Make a ranged spell attack against the creature. On a hit, the target takes {@damage 1d8} radiant damage and, until the end of your next turn, they radiate bright light in a 10 foot radius and dim light for an additional 10 feet.",
+				"This spell's damage increases by {@dice 1d8} when you reach 5th level ({@dice 2d8}), 11th level ({@dice 3d8}), and 17th level ({@dice 4d8})."
+			],
+			"scalingLevelDice": {
+				"label": "radiant damage",
+				"scaling": {
+					"1": "1d8",
+					"5": "2d8",
+					"11": "3d8",
+					"17": "4d8"
+				}
+			},
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"LGT",
+				"SCL"
+			]
+		},
+		{
+			"name": "Spellsteal",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"Choose a creature that you can see within range. A 1st level spell effect of your choosing that affects the target is transferred to you. For its remaining duration, the spell's effect is applied to you as if you had cast it yourself.",
+				"If the stolen spell requires {@status concentration}, you need to concentrate on it. You do not need to provide any additional spellcasting components, if any were required by the stolen spell. Spellsteal has no effect on spells that create or summon creatures, or on spell effects that can't be removed by dispel magic.",
+				"You cannot change the stolen spell from how it was originally cast, unless its description explicitly allows it to be changed after being cast.",
+				"To steal a spell effect of 2nd level or higher, make an ability check using your spellcasting ability. The DC equals 10 + the spell's level. On a successful check, you successfully steal the spell.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the spell level where you automatically succeed the check increases by one for each slot level above 3rd."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			]
+		},
+		{
+			"name": "Starfall",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 300
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a pinch of powdered glass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"Countless flashes of pure moonlight fall to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a Dexterity saving throw. A creature takes {@damage 10d6} radiant damage on a failed save, or half as much damage on a successful one. A creature who failed the saving throw is also {@condition blinded} until the end of your next turn.",
+				"If cast while outdoors with a clear view of the moon, the spell deals an additional {@damage 2d6} radiant damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 7th level or higher, the damage increases by {@dice 1d6} for each slot level above 6th."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Starfire",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A flash of light streaks down upon a creature of your choice within range. Make a ranged spell attack against the target. On a hit, the target takes {@damage 3d6} radiant damage, and is {@condition blinded} until the end of your next turn. The blindness ends early if the target takes damage from a weapon attack or spell, as the stardust blocking its eyes is swept away.",
+				"If cast while outdoors with a clear view of the moon, the spell deals an additional {@damage 1d6} radiant damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 2nd level or higher, the damage increases by {@dice 1d6} for every spell level above 1st."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"spellAttack": [
+				"R"
+			]
+		},
+		{
+			"name": "Starsurge",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 100
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "a rod of glass and a vial of water from a moonwell"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"A blast of intense moonlight bursts forward in a line 100 feet long and 5 feet wide out from you in a direction you choose. Each creature in the burst's path must make a Dexterity saving throw; creatures sensitive to sunlight have disadvantage on their save. A creature takes {@damage 6d6} radiant damage on a failed save, or half as much damage on a successful one.",
+				"If cast while outdoors with a clear view of the moon, the spell deals an additional {@damage 2d6} radiant damage.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, the damage increases by {@dice 1d6} for each slot level above 3rd."
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Summon Void Being",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "an eyeball contained in a vial worth at least 400 gp",
+					"cost": 40000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You call forth a creature from the Void. It manifests physically in an unoccupied space that you can see within range. This corporeal form uses the Void Spirit stat block. When you cast the spell, choose  Mindbender, Psyfiend, or Shadowfiend. The creature resembles the creature of your choice and determines certain traits in its stat block. The creature disappears when it drop to 0 hit points or when the spell ends.",
+				"The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after your. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the {@action Dodge} action and it uses its move to avoid danger.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast the spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears on the stat block."
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			]
+		},
+		{
+			"name": "Touch of Chaos",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 0,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You launch a beam of raw chaos energy at a creature or object within range. Make a ranged spell attack against the target. On a hit, roll a {@dice d8} to determine the damage type it deals on the table below. Then roll {@dice 1d8} as the damage.",
+				{
+					"type": "table",
+					"colLabels": [
+						"d8",
+						"damage type     d8    Damage Type"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"acid 5 Lightning"
+						],
+						[
+							"2",
+							"cold 6 Poison"
+						],
+						[
+							"3",
+							"fire 7 Psychic"
+						],
+						[
+							"4",
+							"force 8 Thunder"
+						]
+					]
+				}
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"OBJ",
+				"RO"
+			]
+		},
+		{
+			"name": "Unholy Weapon",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 5,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You imbue a weapon you touch with unholy power. Until the spell ends, the weapon creates an area of darkness <br> in a 30-foot radius and dim light for an additional 30 feet. The bearer of the unholy weapon is immune to this effect. In addition, weapon attacks made with it deal an extra {@damage 2d8} necrotic damage on a hit. If the weapon isn't already a magic weapon, it becomes one for the duration.",
+				"As a bonus action on your turn, you can dismiss this <br> spell and cause the weapon to emit a torrent of corrupting shadows. Each creature of your choice that you can see within 30 feet of the weapon must make a Constitution saving throw. On a failed save, a creature takes {@dice 4d8} necro&shy;tic damage, and it is {@condition blinded} for 1 minute. On a successful save, a creature takes half as much damage and isn't {@condition blinded}. At the end of each Of its turns, a {@condition blinded} creature can make a Constitution saving throw, ending the effect on itself on a success."
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"blinded"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"AAD",
+				"LGT",
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Ursol's Vortex",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"Choose a point that you can see within range. An elemental force that resembles a swirling vortex extends in a 10-foot radius from the point and lasts for the spell's duration.",
+				"The area is considered to be difficult terrain and any creature who enters or starts their turn in the vortex must make a Strength saving throw. On failed save, the creature takes {@damage 2d6} bludgeoning damage and is pulled to an empty space nearest the vortex's center. On a successful save, the creature takes half as much damage and isn't pulled towards the center of the vortex.",
+				"As a bonus action, you can move the vortex up to 30 feet in any direction.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the damage increases by {@dice 1d6} for each slot level above 4th."
+					]
+				}
+			],
+			"damageInflict": [
+				"bludgeoning"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"miscTags": [
+				"SGT",
+				"UBA"
+			]
+		},
+		{
+			"name": "Void Shift",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 3,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"You call upon the void to shift the health of you and another creature. Choose a willing creature within range, you and the chosen creature exchange your current hit points, to a maximum of 40 hit points from each creature. This spell has no effect on a creature who is {@condition incapacitated} or at 0 hit points.",
+				{
+					"type": "entries",
+					"name": "  At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 5th level or higher, the maximum hit points you can exchange increases by 10 for each slot level above 4th."
+					]
+				}
+			],
+			"conditionInflict": [
+				"incapacitated"
+			],
+			"miscTags": [
+				"HL"
+			]
+		},
+		{
+			"name": "Anti-Magic Shell",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "which you take when you are the target of a spell"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "round",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You surround yourself with a field of necrotic energy that repels harmful magic. For the duration of the spell, you have advantage on saving throws against spells, and resistance to the damage from spells. Furthermore, when a spell allows you to make a saving throw to take only half damage, you instead take no damage if you succeed on the saving throw."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 3rd level or higher, the shell lasts for an additional two rounds for each slot level above 2nd."
+					]
+				}
+			],
+			"miscTags": [
+				"ADV"
+			]
+		},
+		{
+			"name": "Shadow fury",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"You extend your arm and draw shadow energy down upon creatures within a 10-foot radius of a point within range. Each creature takes {@damage 5d8} psychic damage and must succeed on a Wisdom saving throw or be {@condition stunned} for the duration of the spell.",
+				"A {@condition stunned} creature must make a Constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"conditionInflict": [
+				"stunned"
+			],
+			"savingThrow": [
+				"constitution",
+				"wisdom"
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Shambling Horde",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"size": [
+				"M",
+				"G"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 145,
+				"formula": "10d20 + 40"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 25,
+			"dex": 6,
+			"con": 18,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+2"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 8,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"name": "Flesh-Eating Compulsion:",
+					"entries": [
+						"The horde can share a space with another creature. If a creature that is not an undead or a construct shares a space with the horde at the beginning of the horde's turn, the horde is {@condition incapacitated} (ignoring its {@condition incapacitated} immunity) and the creature is engulfed. While engulfed, the creature is {@condition restrained} and takes 21 ({@damage 6d6}) piercing damage at the start of each of the horde's  turns, or 10 ({@damage 3d6}) piercing damage if the horde has half of its hit points or fewer, and the creature must succeed on a {@dc 15} Constitution saving throw or become infected with the shambling death disease.",
+						"A diseased creature can't regain hit points until the disease is cured. For every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 10 ({@dice 3d6}) on a failure. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target's hit point maximum lasts until the disease is cured.",
+						"Engulfed creatures can try to escape by making a {@dc 18} Strength check as an action. On a success, the creature escapes and enters a space of its choice within 5 feet of the shambling horde.",
+						"Horde: The horde can occupy the space of a Large or smaller creature and vice versa, and the horde can move through any opening large enough for a Medium zombie. The horde can't regain hit points or gain temporary hit points.",
+						"Undead Fortitude: If the horde takes damage, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the horde takes no damage instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack:",
+					"entries": [
+						"The shambling horde can make up to three Slams attacks, and each attack must be against a different target.",
+						"Slams: Melee Weapon Attack: {@hit 10} to hit, reach 5 ft., one target. {@h}21 ({@damage 6d6}) bludgeoning damage, or 10 ({@damage 3d6}) bludgeoning damage if the horde has half of its hit points or fewer. If the target is Large or smaller, it is also {@condition grappled} (escape {@dc 18})."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"DIS"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Void Being",
+			"source": "Warcraft-5e-spells",
+			"page": 0,
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"+ spell level"
+					]
+				}
+			],
+			"hp": {
+				"special": "40 + 10 for each spell level above 3rd"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "fly 40 ft. (mindbender only; hover)"
+				}
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 13,
+			"int": 4,
+			"wis": 14,
+			"cha": 16,
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 0,
+			"resist": [
+				"necrotic",
+				"psychic"
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"languages": [
+				"understands the language you speak"
+			],
+			"pbNote": "Your proficiency bonus",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The aberration makes a number of attacks equal to half this spell's level."
+					]
+				},
+				{
+					"name": "Bite (Shadowfiend Only)",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one creature. {@h}{@damage 1d8 + 3} + the spell's level piercing damage, and if the target is a creature, it must succeed on a Constitution saving throw against your spell DC or be {@condition poisoned} till the start of the aberration's next turn."
+					]
+				},
+				{
+					"name": "Tentacle (Mindbender Only)",
+					"entries": [
+						"{@atk mw} your spell attack modifier to hit, reach 5 ft., one creature. {@h}{@damage 1d8 + 3} + the spell's level bludgeoning damage. If the target is a Large creature or smaller, it is {@condition grappled} (escape {@dc 16}); however, the target's speed is not reduced to 0. Until the grapple ends, the aberration shares space with it, the target is {@condition blinded}, and the aberration can't use its tentacles on another target without ending the grapple."
+					]
+				},
+				{
+					"name": "Psyflay (Psyfiend Only)",
+					"entries": [
+						"{@atk rs} your spell attack modifier to hit, range 30 ft., one creature. {@h}{@damage 1d8 + 3} + The spell's level psychic damage. If the target is a creature, it can't regain hit points until the start of the aberration's next turn."
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"poisoned"
+			]
+		}
+	]
+}
